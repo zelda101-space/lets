@@ -71,6 +71,8 @@ class beatmap:
 			# Unfreeze beatmap status
 			frozen = False
 
+		self.rankedStatus = 2
+
 		# Unrank broken approved/qualified/loved maps
 		if not self.disablePP and self.rankedStatus >= rankedStatuses.APPROVED:
 			from objects.score import PerfectScoreFactory
